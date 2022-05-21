@@ -220,10 +220,6 @@ a.whiteButton:hover {
   font-family: 'Permanent Marker', cursive;
 }
 
-#giveaway img {
-  height: 75%;
-}
-
 .container section {
   background-color: #F2ECE9;
 }
@@ -251,6 +247,18 @@ a.whiteButton:hover {
 .container section#terms {
 background-color: #fff;
 text-align: center;
-margin: 0 auto;
-max-width: 60%;
+margin: 4rem auto;
+max-width: 40%;
+font-size: 13px;
+}
+
+#terms a {
+  text-decoration: underline;
+}
+
+#terms p:nth-child(3){
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
