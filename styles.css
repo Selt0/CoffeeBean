@@ -81,12 +81,9 @@ a:hover, .icon {
 }
 
 .logo {
-  idth: 85px;
+  width: 85px;
   height: 85px;
-  position: absolute;
-  right: 87%;
-  top: 6%;
-  transform: translateY(-50%);
+  margin-right: 30px;
 }
 
 .logo img {
@@ -150,13 +147,14 @@ a.whiteButton:hover {
   display: flex;
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
-  height: 625px;
+  max-height: 625px;
   padding-left: 0;
   padding-right: 0;
 }
 .left-right-section img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .left-right-section .image {
@@ -194,7 +192,7 @@ a.whiteButton:hover {
 }
 #giveaway {
   background-color: #F2ECE9;
-  height: 280px;
+  max-height: 280px;
   margin-top: 2.2rem;
 }
 
@@ -235,7 +233,7 @@ a.whiteButton:hover {
 }
 
 .event {
-  height: 420px;
+  max-height: 420px;
 }
 
 .event h2 {
@@ -261,4 +259,59 @@ font-size: 13px;
   margin-bottom: 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+footer {
+  box-shadow: 0 -1px 3px rgba(0,0,0,.1),0 -2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+  padding: 24px 0;
+}
+
+footer .container {
+  padding: 0;
+  display: flex;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 2rem;
+}
+
+footer .container .column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .container .column a {
+  color: rgba(0,0,0,.58);
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+footer .column a:hover{
+  color: rgba(0,0,0,.87);
+}
+
+footer h3 {
+  margin-bottom: 1.8rem;
+  font-weight: 400;
+}
+
+footer .column {
+  width: 190px;
+  max-width: 190px;
+  margin-left: 3rem;
+}
+
+footer .column:first-child {
+  margin-left: 0;
+}
+
+footer .icons img{
+  padding-left: 1.6em;
+}
+
+footer .icons img:first-child {
+  padding-left: 0;
+}
+
+footer div.icons.container {
+  border-bottom: 0;
 }
