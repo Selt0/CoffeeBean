@@ -172,7 +172,7 @@ a.whiteButton:hover {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 3.2rem 40px;
+  padding: 1rem 40px;
   font-size: 24px;
   line-height: 1.5;
 }
@@ -314,4 +314,91 @@ footer .icons img:first-child {
 
 footer div.icons.container {
   border-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (width < 1500px) {
+  footer .container {
+    margin-left: 30px;
+  }
+
+  .header-container {
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+  }
+
+}
+
+@media screen and (width < 1075px) {
+
+  .left-right-section .text {
+    padding: .6rem 30px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+  }
+
+  .text h2 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+  }
+ .container section#terms {
+    max-width: 65%;
+  }
+}
+
+@media screen and (width < 830px) {
+  .nav-items {
+    display: none;
+  }
+  #giveaway {
+
+    padding-bottom: 1rem;
+  }
+  #giveaway .button {
+    margin-top: .8rem;
+  }
+  
+}
+
+@media screen and (width < 775px) {
+  #giveaway {
+    max-height: none;
+  }
+  .left-right-section {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .left-right-section .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-right-section .text {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .container section:nth-child(2), .container section:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container .column {
+    margin-left: 30px;
+  }
+
+  footer .icons.container {
+    flex-direction: row;
+  }
 }
